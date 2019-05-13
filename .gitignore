@@ -1,0 +1,9 @@
+.idea/*
+
+src/main/resources/application.properties
+
+*.class
+
+*.war
+*.jar
+*.ear
