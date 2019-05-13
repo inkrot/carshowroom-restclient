@@ -4,3 +4,249 @@
 1557692267316:translate
 1557692274758:translate --text sd
 1557692291319:translate --text loool
+1557734842875:help
+1557734854859:get-all-orders
+1557736041238:help
+1557736044689:clear
+1557736046185:cls
+1557736056026:get-all-orders
+1557743279671:get-all-order
+1557743285091:get-all-orders
+1557744049536:get-allorders
+1557744055474:get-all-orders
+1557749955443:add-order
+1557749963851:add oprder --help
+1557749968266:--help
+1557749970410:-h
+1557749974482:-help
+1557749979690:--help
+1557749983362:c
+1557749986346:help
+1557750001764:get-all-orders --help
+1557750011411:add-order
+1557750046717:add-order --customer "Shell Customer"
+1557750111948:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota"
+1557750129533:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 3
+1557750142173:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2,3
+1557750156518:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 --options 3
+1557750169407:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557750687538:add-order
+1557750693794:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 --options 3
+1557750698995:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557750714929:sdadd-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557750719577:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options {1,2}
+1557750727569:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options [,4]
+1557750747431:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,4
+1557750860519:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557750867757:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 4
+1557751140413:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557751181022:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 3
+1557751195502:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options '1 4 4'
+1557751201559:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options [1,3]
+1557751213407:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 3 5 2
+1557751298214:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1f
+1557751303757:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1l
+1557751307429:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 2L
+1557751644370:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 2 3
+1557751648212:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 3
+1557751703629:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1, 3
+1557751707578:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2,3
+1557751710490:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 3
+1557751715291:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 3 4
+1557751722944:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2
+1557751764657:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 3
+1557751838460:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 2 1
+1557751852922:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota"
+1557751867827:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 12 34 12
+1557751872890:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 4
+1557751926825:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options "1"
+1557751935400:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options "1" "2" "3"
+1557751940970:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options "1" "2"
+1557751985130:add 1
+1557751988629:add 1 2 3
+1557751997471:add -numbers 1 2 4
+1557752010470:add --numbers 1 2 4
+1557752031971:add 1 3 4
+1557752039974:add --numbers 1 2 4
+1557752044692:add 1 2
+1557752067833:add 2 1
+1557752071124:add 1
+1557752081455:add --numbers 1 4 5
+1557752087309:add --numbers 1
+1557752179373:add --numbers 1 2 3
+1557752185796:add --numbers 1
+1557752394938:Aad
+1557752397226:aDd
+1557752399793:add
+1557752410116:add --numbers [1 2 3]
+1557752423372:add --numbers [1], [2]
+1557752428291:add --numbers 1 2
+1557752436315:add --numbers 1
+1557752444748:add --numbers 1 --numbers 2
+1557752698502:add
+1557752700587:add 1 2
+1557752705162:add 1
+1557752708330:add 1 2 3
+1557752716026:add --numbers 1 2 3
+1557752721723:add --numbers 1
+1557752728410:add --numbers 1 2 3
+1557752734066:add --numbers
+1557752764370:add --numbers 1 2
+1557752768883:add --numbers 1
+1557752776684:add --numbers 1 --numbers 2
+1557752786018:--numbers ad
+1557752790922:add -n 1
+1557752800346:add --numbers 1,3
+1557752812275:add --numbers 1,3 3
+1557752817883:add --numbers 1,3,3
+1557752824851:add --numbers 1,3,4,5,6
+1557752830626:add --numbers 12,3,5
+1557752930700:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2,4
+1557752940678:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557752985382:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options
+1557752990702:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1, 2
+1557752997237:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,3;
+1557753005880:shell:>
+1557753019485:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1, 2
+1557753024492:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,5
+1557753122961:Too many arguments: the following could not be mapped to parameters:
+1557753122968:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,5
+1557753191222:stacktrace
+1557753229889:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557753237102:stacktrace
+1557753262129:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options "1,2"
+1557753296589:add 1 3
+1557753298872:add 1,3
+1557753305630:add 2,1,1
+1557753331049:add 1
+1557753333389:add 1 2
+1557753341695:add --numbers 1 3
+1557753346795:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,5
+1557753354655:add --numbers 1,2
+1557753459306:add 1,2
+1557753463173:add 3 5
+1557753468862:add --numbers 1 2 4
+1557753575260:add 1,2,55
+1557753581006:add 1,2,2,2,2,,2
+1557753584922:add 1,2,3
+1557753633812:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 --options 3
+1557753638014:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,3
+1557753665939:add-order --options 1,2
+1557753675906:add-order --options 1,2 brand 1
+1557753686202:add-order --options 1,2
+1557753689809:add-order --options 1,2 1
+1557753694833:add-order --options 1,2 brand
+1557753701945:add-order --options 1,2 --brand
+1557753707712:add-order --options 1,2 brand 1
+1557753713377:add-order --options 1,2 brand 1 2 3
+1557753722624:add-order --options 1,2 brand 1,23
+1557753765232:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557753808762:add-order --customer Shell --model Camry --brand Toyota --options 1
+1557753819938:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1 --options 3
+1557753827625:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557753853047:add-order --customer 'Shell Customer' --model "Camry" --brand "Toyota" --options 1
+1557753870248:add-order --customer 'Shell Customer' --model 'Camry' --brand 'Toyota' --options 1
+1557753913614:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557753916937:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557753920143:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,35,
+1557753924286:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,3333
+1557753988107:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557754324966:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,5
+1557754855460:stacktrace
+1557755881881:get
+1557755884406:get 1
+1557755890525:get -id 1
+1557755893669:get --id 2
+1557755968345:get 1
+1557755980637:stCKTRACE
+1557755987189:stacktrace
+1557756023764:get 1
+1557756025484:stacktrace
+1557756119630:get 1
+1557756124874:get 2
+1557756160519:get 32
+1557756164938:get 54
+1557756167314:get 2
+1557756170714:get 5
+1557756185017:get 9
+1557756196801:get 1
+1557756199969:get 2
+1557756217674:get-all-orders
+1557756246582:nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of
+1557756395398:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557756412255:get 40
+1557757089215:get 42
+1557757094207:statusService
+1557757102059:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,1
+1557757104482:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1
+1557757108793:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options
+1557757112690:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,3
+1557757117105:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557757132517:get 2
+1557757142432:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557757188199:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 4,5
+1557757192853:stacktrac
+1557757198357:stacktrace
+1557757227982:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,4
+1557757307920:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,3
+1557757437703:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 3,5
+1557757454850:get 45
+1557757894902:post
+1557758352882:get-all
+1557758358307:get-rest
+1557758359802:get
+1557758362139:get 1
+1557759760162:update-order --id 1 --customer "New"
+1557760080420:update-order --id 45 --customer "New"
+1557760966962:get 1
+1557761008051:add-order --customer "CUSTOMER" --model "x7" --brand "bmw" --options 4,5
+1557761021677:get 47
+1557761054615:update-order --id 47 --customer "New"
+1557761064165:stasktrac
+1557761067589:stacktrace
+1557761087148:update-order --id 47 --customer "New"
+1557761091022:stacktrace
+1557762755986:update-order --id 1 --customer "New"
+1557762845627:stacktrase
+1557762849172:update-order --id 1 --customer "New"
+1557762851618:stacktrace
+1557762894328:update-order --id 1 --customer "New"
+1557762932984:stacktrace
+1557763089412:@Override
+1557763101490:update-order --id 1 --customer "New"
+1557764407092:get 2
+1557764431317:update-order --id 1 --customer "New"
+1557764751168:stacktrace
+1557765150778:update-order --id 1 --customer "New"
+1557765192220:stacktrace
+1557765260964:update-order --id 1 --customer "New"
+1557765378601:update-order --id 1 --customer "Nesa"
+1557765390163:update-order --id 1 --customer --model
+1557765400628:update-order --id 1 --customer "New" --model
+1557765443173:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557765468012:update-order --id 1 --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1557765857170:update-order --id 1 --customer "New"
+1557766256889:update-order --id 2 --customer "New"
+1557766259098:update-order --id 1 --customer "New"
+1557766746186:orderDto.getStatus()
+1557766752171:update-order --id 1 --customer "New"
+1557766894502:update-order --id 1 --customer "New" --status 1
+1557766902876:update-order --id 1 --customer "New" --status 2
+1557766906562:update-order --id 1 --customer "New"
+1557767036075:update-order --id 1 --customer "New" --status 2
+1557767039610:update-order --id 1 --customer "New"
+1557767044858:update-order --id 1 --customer "New" --status 3
+1557767046690:update-order --id 1 --customer "New"
+1557767058874:update-order --id 1 --customer "New" --status 1 --options 1,2
+1557767061889:update-order --id 1 --customer "New"
+1557767180313:update-order --id 1 --customer "New" --status 1 --options 1,5
+1557767187184:update-order --id 1 --customer "New" --status 2
+1557767207833:update-order --id 1 --customer "Shell Customer" --status 1 --options 1,1
+1557767214921:update-order --id 1 --customer "Shell Customer" --status 1 --options
+1557767218345:update-order --id 1 --customer "Shell Customer" --status 1 --options 0
+1557767222176:update-order --id 1 --customer "Shell Customer" --status 1 --options null
+1557767224465:update-order --id 1 --customer "Shell Customer" --status 1 --options 1
+1557767231849:update-order --id 1 --customer "Shell Customer" --status 1
+1557767250983:update-order --id 1 --customer "Shell Customer" --status 2
+1557767259071:update-order --id 1
+1557767312303:update-order --id 1 --model "i8"
