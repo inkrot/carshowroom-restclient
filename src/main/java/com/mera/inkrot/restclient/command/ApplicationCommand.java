@@ -1,15 +1,12 @@
 package com.mera.inkrot.restclient.command;
 
-import com.mera.inkrot.restclient.dto.OptionDto;
-import com.mera.inkrot.restclient.dto.OrderDto;
-import com.mera.inkrot.restclient.dto.StatusDto;
+import com.mera.inkrot.restclient.dto.*;
 import com.mera.inkrot.restclient.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
 
-import java.security.Key;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -27,17 +24,17 @@ public class ApplicationCommand {
         return options;
     }
 
-    // add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+    // Example: add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
     @ShellMethod(key = "add-order", value = "Add order")
     public String addOrder(@ShellOption String customer,
                            @ShellOption String model,
                            @ShellOption String brand,
-                           @ShellOption("--options") long[] optionsIds) {
-        OrderDto orderDto = new OrderDto(null, customer, model, brand, null, formatOptionsIdsArrayToSet(optionsIds));
+                           @ShellOption(value = "--options", defaultValue = "") long[] optionsIds) {
+        OrderDto orderDto = new OrderDto(null, new CustomerDto(customer), model, brand, null, formatOptionsIdsArrayToSet(optionsIds));
         return orderService.saveOrder(orderDto).toString();
     }
 
-    // update-order --id 1 --customer "New"
+    // Example: update-order --id 1 --customer "New"
     @ShellMethod(key = "update-order", value = "Update order")
     public String updateOrder(@ShellOption Long id,
                               @ShellOption(defaultValue = "") String customer,
@@ -49,11 +46,18 @@ public class ApplicationCommand {
         if (model.isEmpty()) model = null;
         if (brand.isEmpty()) brand = null;
         if (statusId == -1) statusId = null;
-        OrderDto orderDto = new OrderDto(id, customer, model, brand, new StatusDto(statusId), formatOptionsIdsArrayToSet(optionsIds));
+        OrderDto orderDto = new OrderDto(id, new CustomerDto(customer), model, brand, new StatusDto(statusId, null), formatOptionsIdsArrayToSet(optionsIds));
         //System.out.println(orderDto.toString());
         return orderService.updateOrder(id, orderDto).toString();
     }
 
+    // Example: delete-order 50
+    @ShellMethod(key = "delete-order", value = "Delete order by id (test)")
+    public String deleteOrder(@ShellOption Long id) {
+        return orderService.deleteOrder(id);
+    }
+
+    // Example: get-all-orders
     @ShellMethod(key = "get-all-orders", value = "Get all orders")
     public String getAllOrders() {
         List<OrderDto> orders = orderService.getAllOrders();
@@ -61,7 +65,27 @@ public class ApplicationCommand {
         return ordersStr.substring(1, ordersStr.length() - 1);
     }
 
-    @ShellMethod(key = "get", value = "Get order by id (test)")
+    // Example: get-all-orders-sc --sid 1 --scode "BEING_PROCESSED" --cid 1 --cname "New Customer"
+    @ShellMethod(key = "get-all-orders-sc", value = "Get all orders by status and customer")
+    public String getAllOrdersByStatusAndCustomer(@ShellOption(value = "--sid", defaultValue = "-1") Long statusId,
+                                                  @ShellOption(value = "--scode", defaultValue = "") String statusCode,
+                                                  @ShellOption(value = "--cid", defaultValue = "-1") Long customerId,
+                                                  @ShellOption(value = "--cname", defaultValue = "") String customerName) {
+        if (statusId == -1) statusId = null;
+        if (statusCode.isEmpty()) statusCode = null;
+        if (customerId == -1) customerId = null;
+        if (customerName.isEmpty()) customerName = null;
+        StatusCustomerDto statusCustomerDto = new StatusCustomerDto(
+                new StatusDto(statusId, statusCode),
+                new CustomerDto(customerId, customerName)
+        );
+        List<OrderDto> orders = orderService.getAllOrdersByStatusAndCustomer(statusCustomerDto);
+        String ordersStr = orders.toString();
+        return ordersStr.substring(1, ordersStr.length() - 1);
+    }
+
+    // Example: get-order 1
+    @ShellMethod(key = "get-order", value = "Get order by id (test)")
     public OrderDto getOrder(@ShellOption Long id) {
         return orderService.getOrder(id);
     }

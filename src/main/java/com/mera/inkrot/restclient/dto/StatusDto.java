@@ -1,20 +1,16 @@
 package com.mera.inkrot.restclient.dto;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
-@XmlRootElement(name="status")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class StatusDto extends Dto implements Serializable {
 
     private String code;
 
     private String name;
 
-    public StatusDto(Long id) {
+    public StatusDto(Long id, String code) {
         setId(id);
+        this.code = code;
     }
 
     public StatusDto() {

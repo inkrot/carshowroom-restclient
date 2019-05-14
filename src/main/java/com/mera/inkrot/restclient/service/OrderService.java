@@ -1,6 +1,7 @@
 package com.mera.inkrot.restclient.service;
 
 import com.mera.inkrot.restclient.dto.OrderDto;
+import com.mera.inkrot.restclient.dto.StatusCustomerDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,9 +11,13 @@ public interface OrderService {
 
     OrderDto getOrder(Long id);
 
-    OrderDto updateOrder(Long id, OrderDto orderDto);
-
     OrderDto saveOrder(OrderDto orderDto);
 
+    OrderDto updateOrder(Long id, OrderDto orderDto);
+
+    String deleteOrder(Long id);
+
     List<OrderDto> getAllOrders();
+
+    List<OrderDto> getAllOrdersByStatusAndCustomer(StatusCustomerDto statusCustomerDto);
 }

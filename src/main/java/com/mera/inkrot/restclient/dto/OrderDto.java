@@ -1,25 +1,19 @@
 package com.mera.inkrot.restclient.dto;
 
-import javax.xml.bind.annotation.*;
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Set;
 
-@XmlRootElement(name="order")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class OrderDto extends Dto implements Serializable {
 
-    private String customerName;
+    private CustomerDto customer;
     private String modelName;
     private String brandName;
     private StatusDto status;
-    @XmlElementWrapper(name = "options")
-    @XmlElement(name = "option")
     private Set<OptionDto> options;
 
-    public OrderDto(Long id, String customerName, String carName, String brandName, StatusDto status, Set<OptionDto> options) {
+    public OrderDto(Long id, CustomerDto customer, String carName, String brandName, StatusDto status, Set<OptionDto> options) {
         setId(id);
-        this.customerName = customerName;
+        this.customer = customer;
         this.modelName = carName;
         this.brandName = brandName;
         this.status = status;
@@ -29,12 +23,12 @@ public class OrderDto extends Dto implements Serializable {
     public OrderDto() {
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public CustomerDto getCustomer() {
+        return customer;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setCustomer(CustomerDto customer) {
+        this.customer = customer;
     }
 
     public String getModelName() {
@@ -72,7 +66,7 @@ public class OrderDto extends Dto implements Serializable {
     @Override
     public String toString() {
         return "\nЗаказ №" + getId() +
-                "\n\t- Клиент: " + customerName +
+                "\n\t- Клиент: " + customer.getName() + "(id: " + customer.getId() + ")" +
                 "\n\t- Модель авто: " + modelName +
                 "\n\t- Бренд авто: " + brandName +
                 "\n\t- Статус: " + status +

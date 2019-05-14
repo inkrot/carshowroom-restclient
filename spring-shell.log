@@ -250,3 +250,48 @@
 1557767250983:update-order --id 1 --customer "Shell Customer" --status 2
 1557767259071:update-order --id 1
 1557767312303:update-order --id 1 --model "i8"
+1557847491336:get-all-orders-sc
+1557847743113:get-all-orders-sc --sid 1 --cid 1
+1557847814596:get-all-orders-sc
+1557847827554:get-all-orders-sc --cid 1 -sid 1
+1557847832888:get-all-orders-sc
+1557847844033:get-all-orders-sc --sid 1 --cid 1
+1557848077586:get-all-orders-sc --sid 1 --sname "New" --cid 1 --cname ""
+1557848097934:get-all-orders-sc --sid 1 --cid 1
+1557848131667:get-all-orders-sc --sid 1 --scode "code" --cid 1 --cname "name"
+1557849061630:get-all-orders-sc --sid 1 --scode "code" --cid 1
+1557849072005:get-all-orders-sc --sid 1 --cid 1
+1557849108629:get-all-orders-sc --sid 1 --cname "New"
+1557849139653:get-all-orders-sc --sid 1 --cname "New Customer"
+1557849869761:get-all-orders
+1557849917060:stacktrace
+1557850195027:get-all-orders
+1557850210717:delete 50
+1557850219446:delete-order 50
+1557850228950:get-order 50
+1557850235741:delete 50
+1557850249958:delete-order 50
+1557850371667:get-all-orders
+1557850379923:get-order 50
+1557850386019:get-order 51
+1557850596851:get-order 1
+1557850625591:update-order -status 2
+1557850634352:update-order --status 2
+1557850645470:update-order --id 1 -status 2
+1557850661959:update-order --id 1 --status 2
+1557850668176:update-order --id 1 --status 1
+1557850670919:update-order --id 1 --status 3
+1557850672671:update-order --id 1 --status 1
+1557850683279:update-order --id 1 --customer New
+1557850733206:add-order --customer "Shell Customer" --model "gla" --brand "Mersedez-Benz"
+1557850772800:add-order --customer "Shell Customer" --model "gla" --brand "Mersedez-Benz" --options
+1557850772813:add-order --customer "Shell Customer" --model "gla" --brand "Mersedez-Benz"
+1557850869491:update-order --id 53 --options 1
+1557850881300:update-order --id 53 --options 1,4
+1557850888874:update-order --id 53 --options
+1557850896586:update-order --id 53 --options ""
+1557850899842:update-order --id 53 --options null
+1557850901875:update-order --id 53 --options
+1557850905898:update-order --id 53 --options -
+1557850908394:update-order --id 53 --options 0
+1557850913170:update-order --id 53 --options ''
