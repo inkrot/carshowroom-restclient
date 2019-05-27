@@ -9,6 +9,8 @@ import java.util.List;
 @Service
 public interface OrderService {
 
+    void setWebClient(String host);
+
     OrderDto getOrder(Long id);
 
     OrderDto saveOrder(OrderDto orderDto);

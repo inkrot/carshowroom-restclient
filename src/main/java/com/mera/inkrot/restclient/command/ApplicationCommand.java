@@ -17,11 +17,21 @@ public class ApplicationCommand {
     @Autowired
     OrderService orderService;
 
+    public static String serverUrl = "http://localhost:9000/";
+
     private Set<OptionDto> formatOptionsIdsArrayToSet(long[] optionsIds) {
         Set<OptionDto> options = new HashSet<>();
         for (long id : optionsIds)
             options.add(new OptionDto(id));
         return options;
+    }
+
+    // Example: set-host http://localhost:9000
+    @ShellMethod(key = "server", value = "Set server url. Default: http://localhost:9000")
+    public String server(@ShellOption(defaultValue = "http://localhost:9000") String url) {
+        ApplicationCommand.serverUrl = url;
+        orderService.setWebClient(serverUrl);
+        return "Server url [" + url + "] installed";
     }
 
     // Example: add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2

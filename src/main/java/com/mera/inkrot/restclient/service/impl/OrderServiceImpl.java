@@ -1,5 +1,6 @@
 package com.mera.inkrot.restclient.service.impl;
 
+import com.mera.inkrot.restclient.command.ApplicationCommand;
 import com.mera.inkrot.restclient.dto.OrderDto;
 import com.mera.inkrot.restclient.dto.StatusCustomerDto;
 import com.mera.inkrot.restclient.service.OrderService;
@@ -20,8 +21,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     public OrderServiceImpl() {
+        setWebClient(ApplicationCommand.serverUrl);
+    }
+
+    public void setWebClient(String host) {
         this.webClient = WebClient.builder()
-                .baseUrl("http://localhost:8080/rest/order")
+                .baseUrl(host + "/rest/order")
                 .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE)
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .build();
