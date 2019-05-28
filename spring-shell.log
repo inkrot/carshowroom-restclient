@@ -322,3 +322,10 @@
 1558957546459:set-host http://34.66.177.63/
 1558957551174:get-order 1
 1558957855391:get-all-orders
+1559036676324:get-order 1
+1559036692408:server http://34.66.177.63/
+1559036699585:get-order 1
+1559036746292:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1559036755043:get-order 1
+1559036778190:update-order --id 1 --customer "Клиент"
+1559036793333:update-order --id 1 --customer "Клиент 2"

@@ -57,7 +57,6 @@ public class ApplicationCommand {
         if (brand.isEmpty()) brand = null;
         if (statusId == -1) statusId = null;
         OrderDto orderDto = new OrderDto(id, new CustomerDto(customer), model, brand, new StatusDto(statusId, null), formatOptionsIdsArrayToSet(optionsIds));
-        //System.out.println(orderDto.toString());
         return orderService.updateOrder(id, orderDto).toString();
     }
 
