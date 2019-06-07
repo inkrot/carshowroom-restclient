@@ -329,3 +329,32 @@
 1559036755043:get-order 1
 1559036778190:update-order --id 1 --customer "Клиент"
 1559036793333:update-order --id 1 --customer "Клиент 2"
+1559048989526:get-order 1
+1559048994889:server
+1559049000007:get-order
+1559049003930:get-order 1
+1559049428025:server
+1559049457255:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1559049475286:update-order --id 1 --customer "New"
+1559058038771:server 104.154.234.147
+1559058043586:get-order 1
+1559058060558:server http://104.154.234.147
+1559058067216:get-order 1
+1559058102256:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 2,5
+1559060247619:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1559060402058:get-order 1
+1559060431124:server http://104.154.234.147
+1559060437129:get-order 1
+1559060446050:get-all-orders
+1559060456192:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1559060471996:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 3
+1559060478364:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 4,3
+1559060486019:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2,3,5
+1559060737755:server
+1559060744743:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2,3,5
+1559061095414:server http://104.154.234.147
+1559061100037:get-order 1
+1559061152813:server http://104.154.234.147/
+1559061157252:get-order 1
+1559061164754:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 1,2
+1559061168631:add-order --customer "Shell Customer" --model "Camry" --brand "Toyota" --options 4,5
